@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode styles */
+:root {
+  color-scheme: light dark;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+}
+
+/* Force dark mode on body when dark class is present */
+.dark body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Force light mode on body when light class is present */
+.light body {
+  background-color: #ffffff;
+  color: #000000;
+}
